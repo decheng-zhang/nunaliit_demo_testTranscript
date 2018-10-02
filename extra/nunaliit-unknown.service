@@ -1,0 +1,13 @@
+[Unit]
+Description=nunaliit-unknown
+Requires=couchdb.service
+After=couchdb.service
+
+[Service]
+Type=simple
+User=nunaliit
+ExecStart=/home/dzhang/selfdev/nunaliit/nunaliit/nunaliit2-couch-sdk/target/appassembler/bin/nunaliit --atlas-dir "/home/dzhang/demo" run
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target

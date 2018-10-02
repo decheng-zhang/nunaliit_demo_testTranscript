@@ -1,0 +1,11 @@
+[
+	{
+		"utilityType": "assignLayerOnDocumentCreation"
+		,"layerId": "test"
+	},
+	{
+		"utilityType": "assignLayerOnDocumentCreation"
+		,"layerId": "public"
+		,"onlyWithGeometries": true
+	}
+]

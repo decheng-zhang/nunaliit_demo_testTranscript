@@ -1,0 +1,33 @@
+[
+	{
+		"widgetType": "createDocument"
+		,"showAsLink": true
+		,"containerId": "module_title_bar"
+	}
+	,{
+		"widgetType": "singleFilterSelectionWidget"
+		,"sourceModelId":"layerFilter"
+		,"containerClass": "nunaliit_module_title"
+	}
+	,{
+		"widgetType": "timeline"
+		,"sourceModelId": "time"
+	}		
+	,{
+		"widgetType": "transcriptWidget"
+		,"containerClass": "n2_content_text"
+		,"name": "trans1"
+		,"docId": "51a64a7d008484edb3b372899002a99e"
+		,"videoAttName": "input.mp4"
+		,"srtAttName" : "test.srt"
+		,"sourceModelId": "time"
+		,"timeTable":[
+			{
+				"videoStart": 0
+				,"videoEnd": 31
+				,"timeStart": "2018-07-10"
+				,"timeEnd": "2018-07-28"
+			}
+		]
+	}		
+]

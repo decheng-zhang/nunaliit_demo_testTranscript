@@ -1,0 +1,31 @@
+[
+	{
+		"_comment": "Load all documents from layer public_demo"
+		,"modelType":"couchDb"
+		,"modelId": "couchDb"
+		,"selectors": [
+			{
+				"type":"couchDbSchema"
+				,"options": {
+					"schemaName": "demo_doc"
+				}
+				,"name": {
+					"nunaliit_type": "localized"
+					,"en": "Demo Docs"
+				}
+				,"visibility": true
+			}
+		]
+	}
+	,{
+		"_comment": "Filter"
+		,"modelType":"layerFilter2"
+		,"modelId": "layerFilter"
+		,"sourceModelId": "couchDb"
+	}
+	,{
+		"modelType": "timeFilter"
+		,"modelId": "time"
+		,"sourceModelId":"layerFilter"
+	}
+]
